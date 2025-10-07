@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Secure Sessional Test – I</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="start-screen">
+<h1>Secure Sessional Test – I</h1>
+<form id="start-form">
+<label>Name: <input type="text" id="name" required></label><br>
+<label>Roll Number: <input type="text" id="roll" required></label><br>
+<label>Section: <input type="text" id="section" required></label><br>
+<button type="submit">Start Test</button>
+</form>
+</div>
+<div id="exam-screen" style="display:none;">
+<h2>Time Remaining: <span id="timer">90:00</span></h2>
+<form id="exam-form">
+<div id="section-a">
+<h3>Section A – MCQs</h3>
+<!-- 10 MCQs will be inserted here dynamically -->
+</div>
+<div id="section-b">
+<h3>Section B – Coding Questions</h3>
+<textarea placeholder="Write your Python code here for Question 1..." id="code1"></textarea><br>
+<textarea placeholder="Write your Python code here for Question 2..." id="code2"></textarea>
+</div>
+<div id="section-c">
+<h3>Section C – Coding Question</h3>
+<textarea placeholder="Write your Python code here..." id="code3"></textarea>
+</div>
+<button type="button" id="submit-btn">Submit Test</button>
+</form>
+</div>
+<div id="results-screen" style="display:none;">
+<h2>Test Submitted Successfully!</h2>
+<div id="results"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
